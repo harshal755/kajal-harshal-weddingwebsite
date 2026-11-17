@@ -1,0 +1,106 @@
+{
+  "bride": "Kajal",
+  "groom": "Harshal",
+  "weddingDate": "2026-12-05",
+  "displayDate": "5 December 2026",
+  "dayName": "Saturday",
+  "countdownTarget": "2026-12-05T18:17:00+05:30",
+  "venueName": "Netaji Mangal Karyalay",
+  "venueArea": "Hadapsar, Pune, Maharashtra, India",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Netaji+Mangal+Karyalay%2C+Hadapsar%2C+Pune%2C+Maharashtra%2C+India",
+  "events": [
+    {
+      "name": "Haldi",
+      "time": "9:17 AM",
+      "eyebrow": "A MORNING OF COLOUR & BLESSINGS",
+      "description": "Beginning the wedding day surrounded by family, warmth and joyful traditions."
+    },
+    {
+      "name": "Saptapadi",
+      "time": "1:17 PM",
+      "eyebrow": "SEVEN STEPS · ONE JOURNEY",
+      "description": "The seven sacred steps as two lives begin a shared journey."
+    },
+    {
+      "name": "Lunch",
+      "time": "1:00 PM – 5:00 PM",
+      "eyebrow": "A MEAL WITH OUR LOVED ONES",
+      "description": "Please join our families for lunch and time together."
+    },
+    {
+      "name": "Varmala & Wedding Muhurta",
+      "time": "6:17 PM",
+      "eyebrow": "THE AUSPICIOUS WEDDING MOMENT",
+      "description": "Join us as Kajal and Harshal exchange varmala and begin their married life."
+    }
+  ],
+  "photos": [
+    {
+      "src": "/photos/01-hero-together.webp",
+      "alt": "Kajal in a red dress and Harshal in a burgundy shirt sharing a close moment by the waterfront.",
+      "caption": "A little closer to forever",
+      "category": "Together"
+    },
+    {
+      "src": "/photos/02-waterfront-monochrome.webp",
+      "alt": "Kajal and Harshal holding hands in a black-and-white waterfront portrait.",
+      "caption": "A quiet kind of magic",
+      "category": "Monochrome"
+    },
+    {
+      "src": "/photos/03-terracotta-red.webp",
+      "alt": "Kajal and Harshal standing together beside a terracotta railing in a garden.",
+      "caption": "Side by side",
+      "category": "Together"
+    },
+    {
+      "src": "/photos/04-heritage-portrait.webp",
+      "alt": "Kajal and Harshal in traditional white and pink outfits in front of a heritage doorway.",
+      "caption": "A timeless frame",
+      "category": "Traditions"
+    },
+    {
+      "src": "/photos/05-seated-heritage.webp",
+      "alt": "Kajal and Harshal seated together in traditional outfits beside a terracotta pavilion.",
+      "caption": "A moment to keep",
+      "category": "Traditions"
+    },
+    {
+      "src": "/photos/06-archway-together.webp",
+      "alt": "Kajal and Harshal standing together in front of a traditional red stone archway.",
+      "caption": "A beautiful beginning",
+      "category": "Traditions"
+    },
+    {
+      "src": "/photos/07-monochrome-story.webp",
+      "alt": "A black-and-white portrait of Harshal seated and Kajal standing beside him outdoors.",
+      "caption": "The little things",
+      "category": "Monochrome"
+    },
+    {
+      "src": "/photos/08-music-story.webp",
+      "alt": "Kajal and Harshal seated beside a traditional string instrument in a heritage courtyard.",
+      "caption": "A melody of our own",
+      "category": "Traditions"
+    },
+    {
+      "src": "/photos/09-terracotta-instrument.webp",
+      "alt": "Kajal and Harshal together in a heritage courtyard with a traditional string instrument nearby.",
+      "caption": "Memories in every detail",
+      "category": "Traditions"
+    },
+    {
+      "src": "/photos/10-beach-walk.webp",
+      "alt": "Kajal and Harshal walking hand in hand along the beach in blue outfits.",
+      "caption": "Where the world slows down",
+      "category": "By the sea"
+    },
+    {
+      "src": "/photos/11-beach-lookback.webp",
+      "alt": "Kajal and Harshal looking toward each other while walking together on the beach.",
+      "caption": "Always toward each other",
+      "category": "By the sea"
+    }
+  ],
+  "musicSrc": ""
+}
