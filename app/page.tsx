@@ -235,9 +235,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="photo-story-section">
+      <section className="photo-story-section" id="story">
         <div className="photo-story-image" data-parallax="0.08">
-          <img src={wedding.photos[5].src} alt={wedding.photos[5].alt} />
+          <img src={wedding.photos[1].src} alt={wedding.photos[1].alt} />
           <div className="photo-story-overlay" />
         </div>
         <div className="photo-story-copy reveal">
@@ -249,7 +249,7 @@ export default function Home() {
       </section>
 
       <section className="countdown-section">
-        <div className="countdown-backdrop" data-parallax="0.035"><img src={wedding.photos[9].src} alt="" aria-hidden="true" /></div>
+        <div className="countdown-backdrop" data-parallax="0.035"><img src={wedding.photos[10].src} alt="" aria-hidden="true" /></div>
         <div className="countdown-shade" />
         <div className="section-inner reveal">
           <p className="eyebrow light">✧ &nbsp; THE MOMENT APPROACHES &nbsp; ✧</p>
@@ -286,7 +286,7 @@ export default function Home() {
 
       <section className="venue-section" id="venue">
         <div className="venue-photo" data-parallax="0.06">
-          <img src={wedding.photos[3].src} alt={wedding.photos[3].alt} />
+          <img src={wedding.photos[4].src} alt={wedding.photos[4].alt} />
           <div className="venue-photo-caption">A PLACE TO GATHER · A DAY TO REMEMBER</div>
         </div>
         <div className="venue-copy reveal">

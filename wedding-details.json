@@ -37,7 +37,7 @@
   "photos": [
     {
       "src": "/photos/01-hero-together.webp",
-      "alt": "Kajal in a red dress and Harshal in a burgundy shirt sharing a close moment by the waterfront.",
+      "alt": "Kajal and Harshal sharing a close moment by the waterfront.",
       "caption": "A little closer to forever",
       "category": "Together"
     },
@@ -48,56 +48,62 @@
       "category": "Monochrome"
     },
     {
-      "src": "/photos/03-terracotta-red.webp",
-      "alt": "Kajal and Harshal standing together beside a terracotta railing in a garden.",
+      "src": "/photos/03-terracotta-portrait-a.webp",
+      "alt": "Kajal in an orange-red dress and Harshal in a burgundy shirt standing together beneath the trees.",
       "caption": "Side by side",
       "category": "Together"
     },
     {
-      "src": "/photos/04-heritage-portrait.webp",
-      "alt": "Kajal and Harshal in traditional white and pink outfits in front of a heritage doorway.",
+      "src": "/photos/04-terracotta-portrait-b.webp",
+      "alt": "Another portrait of Kajal and Harshal together in the leafy courtyard.",
+      "caption": "A shared smile",
+      "category": "Together"
+    },
+    {
+      "src": "/photos/05-heritage-portrait.webp",
+      "alt": "Kajal and Harshal in traditional white and blush outfits at a heritage doorway.",
       "caption": "A timeless frame",
       "category": "Traditions"
     },
     {
-      "src": "/photos/05-seated-heritage.webp",
-      "alt": "Kajal and Harshal seated together in traditional outfits beside a terracotta pavilion.",
+      "src": "/photos/06-seated-heritage.webp",
+      "alt": "Kajal and Harshal seated together beside a terracotta pavilion.",
       "caption": "A moment to keep",
       "category": "Traditions"
     },
     {
-      "src": "/photos/06-archway-together.webp",
-      "alt": "Kajal and Harshal standing together in front of a traditional red stone archway.",
+      "src": "/photos/07-archway-together.webp",
+      "alt": "Kajal and Harshal standing together in front of a traditional stone pavilion.",
       "caption": "A beautiful beginning",
       "category": "Traditions"
     },
     {
-      "src": "/photos/07-monochrome-story.webp",
+      "src": "/photos/08-monochrome-story.webp",
       "alt": "A black-and-white portrait of Harshal seated and Kajal standing beside him outdoors.",
       "caption": "The little things",
       "category": "Monochrome"
     },
     {
-      "src": "/photos/08-music-story.webp",
-      "alt": "Kajal and Harshal seated beside a traditional string instrument in a heritage courtyard.",
+      "src": "/photos/09-music-story.webp",
+      "alt": "Kajal and Harshal seated together on the steps of a heritage courtyard.",
       "caption": "A melody of our own",
       "category": "Traditions"
     },
     {
-      "src": "/photos/09-terracotta-instrument.webp",
+      "src": "/photos/10-terracotta-instrument.webp",
       "alt": "Kajal and Harshal together in a heritage courtyard with a traditional string instrument nearby.",
       "caption": "Memories in every detail",
       "category": "Traditions"
     },
     {
-      "src": "/photos/10-beach-walk.webp",
-      "alt": "Kajal and Harshal walking hand in hand along the beach in blue outfits.",
+      "src": "/photos/11-beach-walk.webp",
+      "alt": "Kajal and Harshal walking together along the beach in blue outfits.",
       "caption": "Where the world slows down",
       "category": "By the sea"
     },
     {
-      "src": "/photos/11-beach-lookback.webp",
-      "alt": "Kajal and Harshal looking toward each other while walking together on the beach.",
+      "src": "/photos/12-beach-lookback.webp",
+      "alt": "Kajal and Harshal holding hands by the sea and looking toward each other.",
       "caption": "Always toward each other",
       "category": "By the sea"
     }

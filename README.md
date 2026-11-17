@@ -1,80 +1,18 @@
-# Kajal & Harshal — Wedding Invitation
+# Kajal & Harshal Wedding Invitation
 
-A mobile-first, photo-led wedding invitation with an animated envelope opening, parallax photo chapters, a live countdown to the wedding muhurta, an event itinerary, venue directions, and an interactive photo gallery.
-
-## Wedding details included
-
-- **Couple:** Kajal & Harshal
-- **Date:** Saturday, 5 December 2026
-- **Venue:** Netaji Mangal Karyalay, Hadapsar, Pune
-- **Haldi:** 9:17 AM
-- **Saptapadi:** 1:17 PM
-- **Lunch:** 1:00 PM – 5:00 PM
-- **Varmala & wedding muhurta:** 6:17 PM
-- **Countdown target:** 5 December 2026, 6:17 PM India time
-
-The ceremony timings are displayed as supplied. In particular, Saptapadi and lunch overlap in the supplied timings; confirm that is intentional before sharing the invitation widely.
-
-## Photo handling
-
-The 12 image uploads included one exact duplicate, so the project includes all **11 distinct photographs**. They are saved as optimized WebP website copies in `public/photos/`. Your original uploads have not been changed. The gallery includes all 11 distinct images and opens each one in a full-screen viewer.
+A Next.js wedding invitation site. All event information and image captions are editable in `wedding-details.json`.
 
 ## Run locally
+1. Install Node.js 20 or later.
+2. Open this folder in a terminal.
+3. Run `npm install` and then `npm run dev`.
+4. Open http://localhost:3000.
 
-1. Install Node.js LTS.
-2. Open a terminal in this project folder.
-3. Run `npm install`.
-4. Run `npm run dev`.
-5. Open http://localhost:3000.
+## Photos
+All 12 couple photographs are stored in `public/photos/` and listed in `wedding-details.json`. Replace a file using the same filename to update a photo, or change the `src` in the JSON.
 
-## Deploy to Vercel
+## Edit wedding details
+Edit `wedding-details.json` to change names, date, venue, schedule times, captions, and music path. To add music, put an audio file in `public/music/` and set `musicSrc` to its public path (for example `/music/your-song.mp3`).
 
-1. Create a GitHub repository and upload the contents of this project folder.
-2. Sign in to Vercel and select **Add New → Project**.
-3. Import the GitHub repository. Vercel should detect Next.js automatically.
-4. Keep the default build command (`npm run build`) and deploy.
-5. Vercel will provide a public `.vercel.app` URL that can be shared with guests.
-
-## Easy updates later
-
-Most wedding content is centralized in `wedding-details.json`:
-
-- Names, date, venue and Google Maps link
-- Countdown target
-- Ceremony names, times and descriptions
-- Photo captions and alternative text
-- Optional music file path
-
-To replace or add photographs, put optimized image files in `public/photos/` and update the `photos` array in `wedding-details.json`.
-
-### Add background music later
-
-No audio track was included in the uploaded project, so music cannot play yet. The music control will appear automatically once you add a track. To enable it:
-
-1. Add an MP3 audio file you own or have permission to use to `public/music/` (for example, `wedding-instrumental.mp3`).
-2. Set `musicSrc` in `wedding-details.json` to `/music/wedding-instrumental.mp3`.
-
-Guests must press Play; browsers generally block autoplay with sound. The music can be changed or removed later.
-
-## Project structure
-
-- `app/page.tsx` — page layout and interactions
-- `app/globals.css` — colors, typography, responsive layout and animations
-- `app/layout.tsx` — page metadata
-- `wedding-details.json` — editable wedding content
-- `public/photos/` — optimized copies of the supplied photos
-- `public/kajal-harshal-wedding.ics` — all-day calendar entry with the ceremony schedule
-
-## Before the public launch
-
-- Confirm whether the Saptapadi time of 1:17 PM and lunch window of 1:00–5:00 PM intentionally overlap.
-- Confirm the exact venue listing/map pin and entrance.
-- Select the background music, if desired.
-- Add any family names or phone numbers only if you want them public.
-
-The page respects reduced-motion preferences and uses manual user interaction for the opening and music playback.
-
-
-## Uploading to GitHub
-
-Upload the contents of this project folder (the `app` and `public` folders, `package.json`, `wedding-details.json`, and configuration files) directly into the repository root. Do not upload an extra nested copy of the project folder.
+## Deploy
+The project root is this folder (the folder containing `package.json` and `app/`). Use `/` as the Vercel Root Directory.
