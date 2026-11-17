@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Kajal and Harshal//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:kajal-harshal-wedding-20261205@kajal-harshal
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Kajal & Harshal — Wedding Celebration
+LOCATION:Netaji Mangal Karyalay\, Hadapsar\, Pune\, Maharashtra\, India
+DESCRIPTION:Join us to celebrate Kajal & Harshal.\n\nHaldi: 9:17 AM\nSaptapadi: 1:17 PM\nLunch: 1:00 PM – 5:00 PM\nVarmala & Wedding Muhurta: 6:17 PM\n\nVenue: Netaji Mangal Karyalay\, Hadapsar\, Pune.
+END:VEVENT
+END:VCALENDAR

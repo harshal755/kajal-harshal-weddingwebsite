@@ -108,5 +108,11 @@
       "category": "By the sea"
     }
   ],
-  "musicSrc": ""
+  "mapsEmbedUrl": "https://maps.google.com/maps?q=Netaji+Mangal+Karyalay%2C+Hadapsar%2C+Pune%2C+Maharashtra%2C+India&output=embed",
+  "music": {
+    "title": "Kesariya - Brahmāstra | Soulful Flute Cover",
+    "artist": "Divyansh Shrivastava",
+    "videoId": "37OFgwtS2pM",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/37OFgwtS2pM?rel=0&modestbranding=1"
+  }
 }
