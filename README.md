@@ -49,9 +49,9 @@ To replace or add photographs, put optimized image files in `public/photos/` and
 
 ### Add background music later
 
-The music control is already prepared but hidden until a track is selected. To enable it:
+No audio track was included in the uploaded project, so music cannot play yet. The music control will appear automatically once you add a track. To enable it:
 
-1. Add an audio file you have permission to use to `public/music/` (for example, `wedding-instrumental.mp3`).
+1. Add an MP3 audio file you own or have permission to use to `public/music/` (for example, `wedding-instrumental.mp3`).
 2. Set `musicSrc` in `wedding-details.json` to `/music/wedding-instrumental.mp3`.
 
 Guests must press Play; browsers generally block autoplay with sound. The music can be changed or removed later.
@@ -73,3 +73,8 @@ Guests must press Play; browsers generally block autoplay with sound. The music 
 - Add any family names or phone numbers only if you want them public.
 
 The page respects reduced-motion preferences and uses manual user interaction for the opening and music playback.
+
+
+## Uploading to GitHub
+
+Upload the contents of this project folder (the `app` and `public` folders, `package.json`, `wedding-details.json`, and configuration files) directly into the repository root. Do not upload an extra nested copy of the project folder.

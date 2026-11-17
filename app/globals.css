@@ -340,3 +340,49 @@ img { display: block; max-width: 100%; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+
+/* Final palette refinement: ivory and champagne lead; wine is a restrained accent. */
+.envelope-gate {
+  color: var(--wine);
+  background:
+    radial-gradient(ellipse at 50% 42%, rgba(255,255,255,.92), transparent 54%),
+    linear-gradient(135deg, #fbf8f1 0%, #efe3cf 100%);
+}
+.envelope-gate::before, .envelope-gate::after { border-color: rgba(164,128,78,.28); }
+.gate-halo { border-color: rgba(164,128,78,.18); box-shadow: 0 0 0 32px rgba(198,163,110,.055), 0 0 0 72px rgba(198,163,110,.035), 0 0 0 112px rgba(198,163,110,.02); }
+.gate-eyebrow, .gate-heading p, .gate-footer { color: #8b765e; }
+.gate-heading h1 { color: var(--wine); }
+.envelope-shadow { background: rgba(72,53,35,.18); }
+.open-invitation { color: var(--wine); border-color: rgba(166,132,83,.65); background: rgba(255,255,255,.42); }
+.open-invitation:hover { color: #fffaf0; background: var(--wine); }
+.countdown-section {
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.88), transparent 58%),
+    linear-gradient(125deg, #f6efe4, #e9dcc7);
+}
+.countdown-shade { background: linear-gradient(90deg, rgba(247,241,232,.88), rgba(244,235,220,.82)), radial-gradient(ellipse at 50% 50%, rgba(198,163,110,.10), transparent 60%); }
+.countdown-section .eyebrow, .countdown-note, .countdown-label, .countdown-foot { color: #8a7359; }
+.countdown-section h2, .countdown-number { color: var(--wine); }
+.countdown-section h2 em { color: #b18c5a; }
+.countdown-foot span { color: var(--gold); }
+.venue-section { background: linear-gradient(135deg, #f5eee3, #e9ddca); color: var(--ink); }
+.venue-copy .eyebrow, .venue-copy .light-kicker { color: #96794f; }
+.venue-copy h2, .venue-copy h3 { color: var(--wine); }
+.venue-copy h2 em { color: #ad8b5d; }
+.venue-address { color: #786657; }
+.map-button { color: var(--wine); border-color: #b99b6c; }
+.map-button:hover { background: var(--wine); color: #fff8ed; }
+.venue-map-note { color: #927c64; }
+.footer-section { background: linear-gradient(135deg, #f8f3e9, #e9ddca); color: var(--ink); border-top: 1px solid #e3d4bb; }
+.footer-inner h2, .footer-names { color: var(--wine); }
+.footer-inner h2 em, .footer-names i { color: #b18c5a; }
+.footer-inner .eyebrow, .footer-copy, .footer-date, .share-feedback, .footer-bottom a, .footer-bottom > span:first-child { color: #8b765e; }
+.share-button, .calendar-button { color: var(--wine); border-color: #b99b6c; }
+.share-button:hover, .calendar-button:hover { background: var(--wine); color: #fff8ed; }
+.footer-bottom { border-top-color: rgba(166,132,83,.3); }
+.photo-story-section { background: #766452; }
+.photo-story-overlay { background: linear-gradient(90deg, rgba(47,39,31,.62), rgba(68,54,39,.32) 55%, rgba(47,39,31,.50)); }
+.music-control button { color: var(--wine); background: rgba(250,247,240,.96); border-color: #c6a36e; }
+.music-control button span { color: #a88755; }
