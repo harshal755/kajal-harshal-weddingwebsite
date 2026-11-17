@@ -1,1 +1,1 @@
-Place a music file you have permission to use in this folder, then set musicSrc in the root wedding-details.json file, e.g. "/music/wedding-instrumental.mp3".
+The current invitation uses a YouTube-hosted Kesariya flute cover embedded in the page. It is not distributed as a bundled audio file. Update the music object in the root wedding-details.json to change the embedded performance.

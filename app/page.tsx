@@ -4,7 +4,6 @@ import { useCallback, useEffect, useState } from 'react';
 import wedding from '../wedding-details.json';
 
 type TimeLeft = { days: number; hours: number; minutes: number; seconds: number };
-type Photo = (typeof wedding.photos)[number];
 
 const weddingMoment = new Date(wedding.countdownTarget);
 
@@ -97,7 +96,6 @@ export default function Home() {
   const [isOpened, setIsOpened] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState<number | null>(null);
   const [shareMessage, setShareMessage] = useState('');
-  const [musicPlaying, setMusicPlaying] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = isOpened ? '' : 'hidden';
@@ -296,8 +294,17 @@ export default function Home() {
           <Ornament />
           <h3>{wedding.venueName}</h3>
           <p className="venue-address">{wedding.venueArea}</p>
+          <div className="venue-map-frame">
+            <iframe
+              src={wedding.mapsEmbedUrl}
+              title={`Google Maps preview for ${wedding.venueName}, ${wedding.venueArea}`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
           <a className="map-button" href={wedding.mapsUrl} target="_blank" rel="noreferrer">OPEN GOOGLE MAPS <span>↗</span></a>
-          <p className="venue-map-note">Tap for directions to the wedding venue.</p>
+          <p className="venue-map-note">Explore the map here, or open Google Maps for full directions.</p>
         </div>
       </section>
 
@@ -319,6 +326,26 @@ export default function Home() {
               </button>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="music-section paper-section" id="our-song">
+        <div className="section-inner music-inner reveal">
+          <p className="eyebrow">✧ &nbsp; A MELODY FOR OUR DAY &nbsp; ✧</p>
+          <p className="section-kicker">A little music, a lot of feeling</p>
+          <h2>Our song, in a<br /><em>softer note.</em></h2>
+          <p className="body-copy">Enjoy this soulful flute rendition of “Kesariya” as you explore our invitation.</p>
+          <div className="music-video-card">
+            <iframe
+              src={wedding.music.embedUrl}
+              title={wedding.music.title}
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+          <p className="music-credit">Flute cover by {wedding.music.artist} · Hosted by YouTube</p>
         </div>
       </section>
 
@@ -349,20 +376,6 @@ export default function Home() {
           <div className="footer-bottom"><span>K <i>&</i> H</span><span>WE LOOK FORWARD TO CELEBRATING WITH YOU</span><a href="#top">BACK TO TOP ↑</a></div>
         </div>
       </footer>
-
-      {wedding.musicSrc && (
-        <div className="music-control">
-          <audio id="wedding-audio" src={wedding.musicSrc} loop />
-          <button onClick={() => {
-            const audio = document.getElementById('wedding-audio') as HTMLAudioElement | null;
-            if (!audio) return;
-            if (musicPlaying) audio.pause(); else void audio.play();
-            setMusicPlaying(!musicPlaying);
-          }} aria-label={musicPlaying ? 'Pause wedding music' : 'Play wedding music'}>
-            <span>{musicPlaying ? 'Ⅱ' : '▶'}</span> {musicPlaying ? 'PAUSE MUSIC' : 'PLAY MUSIC'}
-          </button>
-        </div>
-      )}
 
       {selectedPhoto !== null && (
         <div className="lightbox" role="dialog" aria-modal="true" aria-label="Photograph viewer" onClick={() => setSelectedPhoto(null)}>

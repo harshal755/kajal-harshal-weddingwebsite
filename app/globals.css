@@ -436,3 +436,172 @@ img { display: block; max-width: 100%; }
 .lightbox { background: rgba(31,35,30,.96); }
 .music-control button { color: #fdfbf4; background: rgba(75,88,69,.96); border-color: #c6b388; }
 .music-control button span { color: #eee1c2; }
+
+/* Wine and ivory refinement + accessible typography pass */
+:root {
+  --ivory: #faf6ef;
+  --paper: #fffdf8;
+  --cream: #f0e6d9;
+  --ink: #382a30;
+  --muted: #75656a;
+  --wine: #6b233f;
+  --wine-deep: #451729;
+  --rose: #a7677d;
+  --gold: #c3a06a;
+  --gold-light: #f2e7d4;
+  --sage: #8d786e;
+}
+
+html { scroll-padding-top: 84px; }
+body { background: var(--paper); color: var(--ink); font-size: 16px; }
+.site-nav { background: rgba(255,253,248,.94); border-bottom-color: rgba(107,35,63,.16); }
+.nav-mark { color: var(--wine); }
+.nav-links a, .nav-date { color: #624c55; font-size: 12px; letter-spacing: .09em; }
+.nav-links a:hover, .nav-date:hover { color: var(--wine); }
+.eyebrow { color: #8d5369; font-size: 11px; letter-spacing: .16em; }
+.eyebrow.light { color: #f0d9df; }
+.section-inner h2, .hero h1, .event-card h3, .signature-names, .family-seal, .footer-inner h2, .footer-names { color: var(--wine); }
+.section-inner h2 em, .photo-story-copy h2 em, .venue-copy h2 em, .footer-inner h2 em { color: var(--rose); }
+.hero { background: radial-gradient(ellipse at 75% 34%, rgba(195,160,106,.17), transparent 42%), linear-gradient(110deg, #fffdf8 0%, #f4e9df 100%); }
+.hero::before { border-color: rgba(107,35,63,.13); box-shadow: 0 0 0 24px rgba(107,35,63,.025), 0 0 0 52px rgba(107,35,63,.018); }
+.hero-kicker { color: #875467; font-size: 11px; }
+.hero-date { color: var(--wine); font-size: 14px; }
+.hero-place, .hero-scroll { font-size: 11px; }
+.photo-story-section { background: #5c293d; }
+.photo-story-overlay { background: linear-gradient(90deg, rgba(55,19,35,.74), rgba(74,30,47,.32) 55%, rgba(55,19,35,.6)); }
+.countdown-section { background: linear-gradient(125deg, #f5eae0, #ead7d1); }
+.countdown-shade { background: linear-gradient(90deg, rgba(250,246,239,.86), rgba(246,235,226,.78)), radial-gradient(ellipse at 50% 50%, rgba(107,35,63,.09), transparent 60%); }
+.countdown-section .eyebrow, .countdown-note, .countdown-label, .countdown-foot { color: #7d4b5f; }
+.countdown-section h2, .countdown-number { color: var(--wine); }
+.countdown-section h2 em { color: #a7677d; }
+.event-card { background: #fffdf8; border-color: #eadbd1; box-shadow: 0 12px 28px rgba(69,23,41,.045); }
+.event-card-top { color: #a36a7d; border-bottom-color: #eadbd1; }
+.event-overline { color: #86546a; }
+.event-card h3 { color: var(--wine); }
+.event-time { color: #86546a; }
+.event-description { color: #66565b; }
+.venue-section { background: linear-gradient(135deg, #fffaf2, #f1e4d8); color: var(--ink); }
+.venue-photo::after { background: linear-gradient(0deg, rgba(53,20,37,.48), transparent 50%); }
+.venue-photo-caption { color: #fffaf2; }
+.venue-copy .eyebrow, .venue-copy .light-kicker { color: #8f5b70; }
+.venue-copy h2, .venue-copy h3 { color: var(--wine); }
+.venue-copy h2 em { color: var(--rose); }
+.venue-address { color: #68575c; font-size: 16px; }
+.map-button { color: var(--wine); border-color: #b78a7b; background: rgba(255,255,255,.38); font-size: 12px; letter-spacing: .09em; }
+.map-button:hover { background: var(--wine); color: #fffaf2; }
+.venue-map-note { color: #745e64; font-size: 14px; }
+.footer-section { background: linear-gradient(135deg, #4b1b31, #6b233f); color: #fff8f1; border-top: 1px solid rgba(255,255,255,.12); }
+.footer-inner h2, .footer-names { color: #fff7ed; }
+.footer-inner h2 em, .footer-names i { color: #e0b8aa; }
+.footer-inner .eyebrow, .footer-copy, .footer-date, .share-feedback, .footer-bottom a, .footer-bottom > span:first-child { color: #f0d9df; }
+.share-button, .calendar-button { color: #fff7ed; border-color: rgba(242,220,201,.68); font-size: 12px; }
+.share-button:hover, .calendar-button:hover { background: #fff7ed; color: var(--wine-deep); }
+.footer-bottom { border-top-color: rgba(242,220,201,.28); color: #edd5d9; }
+.gallery-photo-shade { background: linear-gradient(transparent, rgba(53,20,37,.68)); }
+.lightbox { background: rgba(44,14,29,.97); }
+.lightbox-caption span { color: #e2bda6; }
+.music-section { background: linear-gradient(135deg, #fffdf8, #f4e8dd); }
+.music-inner { padding-top: 92px; padding-bottom: 96px; }
+.music-video-card { width: min(100%, 760px); margin: 34px auto 0; overflow: hidden; border: 1px solid rgba(107,35,63,.2); border-radius: 14px; background: #2b1720; box-shadow: 0 24px 55px rgba(69,23,41,.16); }
+.music-video-card iframe { display: block; width: 100%; aspect-ratio: 16 / 9; min-height: 220px; border: 0; }
+.music-credit { margin: 14px 0 0; color: #80616d; font: italic 14px/1.5 var(--serif); }
+
+/* A readable floor for labels, helper text and navigation. */
+.gate-eyebrow, .letter-small, .letter-date, .open-invitation,
+.hero-photo-caption, .hero-side-note, .hero-bottom-note, .signature-caption,
+.light-link, .countdown-label, .countdown-foot, .event-overline,
+.venue-photo-caption, .gallery-photo-caption small, .footer-date,
+.footer-bottom, .share-button, .calendar-button, .lightbox-caption span,
+.lightbox-caption small { font-size: 10.5px; }
+.gate-eyebrow { color: #89566b; }
+.gate-heading h1 { color: var(--wine); }
+.gate-heading p, .gate-footer { color: #785e64; }
+.envelope-gate { background: radial-gradient(ellipse at 50% 38%, rgba(255,255,255,.98), rgba(249,245,237,.7) 48%, transparent 70%), linear-gradient(135deg, #fffdf8, #f0e2d5); }
+.envelope-gate::before, .envelope-gate::after { border-color: rgba(107,35,63,.17); }
+.gate-halo { border-color: rgba(107,35,63,.12); box-shadow: 0 0 0 32px rgba(107,35,63,.04), 0 0 0 72px rgba(107,35,63,.025), 0 0 0 112px rgba(107,35,63,.015); }
+.envelope-letter { color: var(--wine); }
+.letter-monogram { color: var(--wine); }
+.envelope-seal { background: radial-gradient(circle at 35% 30%, #a85e78, #742944 68%, #451729); border-color: #d0ac7a; }
+.open-invitation { color: var(--wine); border-color: rgba(107,35,63,.38); background: rgba(255,255,255,.6); }
+.open-invitation:hover { background: var(--wine); color: #fffaf2; }
+
+/* Larger live map preview, with a direct full-map link below it. */
+.venue-map-frame { width: min(100%, 560px); height: clamp(220px, 25vw, 330px); margin-top: 23px; overflow: hidden; border: 1px solid rgba(107,35,63,.2); border-radius: 12px; background: #eee4d8; box-shadow: 0 14px 32px rgba(69,23,41,.12); }
+.venue-map-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.venue-copy { align-items: stretch; }
+.venue-copy .eyebrow, .venue-copy .section-kicker, .venue-copy h2, .venue-copy h3, .venue-copy .ornament, .venue-copy .venue-address, .venue-copy .map-button, .venue-copy .venue-map-note { align-self: flex-start; }
+
+/* Increase text where the original layout used tiny display labels. */
+.body-copy { font-size: 18px; line-height: 1.8; }
+.section-kicker { font-size: 18px; }
+.hero-kicker, .hero-place, .hero-scroll { font-size: 11px; }
+.hero-photo-caption { font-size: 10.5px; }
+.countdown-label { font-size: 11px; }
+.countdown-foot { font-size: 11px; }
+.event-overline { font-size: 10.5px; letter-spacing: .09em; }
+.event-time { font-size: 14px; }
+.event-description { font-size: 15px; }
+.schedule-note { font-size: 14px; }
+.gallery-photo-caption small { font-size: 10px; }
+.gallery-photo-caption strong { font-size: 17px; }
+.lightbox-caption span, .lightbox-caption small { font-size: 11px; }
+.footer-date { font-size: 11px; }
+.footer-bottom { font-size: 10.5px; }
+
+@media (max-width: 900px) {
+  .venue-copy { padding: 70px clamp(24px, 5vw, 52px); }
+  .venue-map-frame { height: 280px; }
+}
+
+@media (max-width: 650px) {
+  html { scroll-padding-top: 68px; }
+  .site-nav { height: 66px; padding: 0 13px; gap: 12px; }
+  .nav-mark { flex: 0 0 auto; font-size: 22px; }
+  .nav-links { flex: 1 1 auto; min-width: 0; display: flex; justify-content: flex-end; gap: clamp(6px, 2vw, 12px); }
+  .nav-links a { display: inline-block !important; white-space: nowrap; font-size: clamp(9.5px, 2.5vw, 10.5px); letter-spacing: .015em; }
+  .nav-date { display: none; }
+  .gate-eyebrow { font-size: 10px; letter-spacing: .13em; }
+  .letter-small, .letter-date { font-size: 9px; }
+  .open-invitation { font-size: 11px; }
+  .eyebrow { font-size: 10.5px; letter-spacing: .11em; }
+  .hero-kicker { font-size: 10px; letter-spacing: .1em; }
+  .hero-date { font-size: 12px; }
+  .hero-place, .hero-scroll { font-size: 10px; }
+  .hero-photo-caption, .hero-side-note, .hero-bottom-note { font-size: 9.5px; }
+  .section-kicker { font-size: 17px; }
+  .body-copy { font-size: 16.5px; line-height: 1.75; }
+  .countdown-label { font-size: 10px; letter-spacing: .07em; }
+  .countdown-foot { font-size: 9.5px; letter-spacing: .045em; }
+  .event-overline { font-size: 9px; letter-spacing: .035em; line-height: 1.5; }
+  .event-card { min-height: 275px; padding: 16px 12px; }
+  .event-card h3 { font-size: 21px; }
+  .event-time { font-size: 12px; }
+  .event-description { font-size: 13px; }
+  .venue-section { grid-template-columns: 1fr; }
+  .venue-photo { min-height: 390px; }
+  .venue-copy { padding: 60px 22px 70px; align-items: stretch; text-align: left; }
+  .venue-copy h3 { font-size: 25px; }
+  .venue-address { max-width: none; font-size: 16px; }
+  .venue-map-frame { width: 100%; height: 270px; margin-top: 21px; }
+  .map-button { align-self: flex-start; font-size: 11px; }
+  .venue-map-note { font-size: 13px; }
+  .music-inner { padding-top: 75px; padding-bottom: 78px; }
+  .music-video-card { margin-top: 25px; border-radius: 10px; }
+  .music-video-card iframe { min-height: 205px; }
+  .music-credit { font-size: 12px; }
+  .footer-date { font-size: 10px; letter-spacing: .09em; }
+  .share-button, .calendar-button { font-size: 10.5px; letter-spacing: .07em; }
+  .footer-bottom { font-size: 9px; letter-spacing: .055em; }
+  .gallery-photo-caption small { font-size: 9px; }
+  .gallery-photo-caption strong { font-size: 15px; }
+}
+
+@media (max-width: 360px) {
+  .site-nav { padding: 0 10px; gap: 8px; }
+  .nav-mark { font-size: 20px; }
+  .nav-links { gap: 6px; }
+  .nav-links a { font-size: 9.5px; }
+}
+
+.family-seal span { font-size: 10px; }
+@media (max-width: 650px) { .family-seal span { font-size: 9.5px; } }
