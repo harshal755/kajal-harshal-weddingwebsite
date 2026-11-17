@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Kajal and Harshal//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:kajal-harshal-wedding-20261205@kajal-harshal
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Wedding of Kajal and Harshal
+LOCATION:Netaji Mangal Karyalay, Hadapsar, Pune, Maharashtra 411028
+DESCRIPTION:Celebrate the wedding of Kajal and Harshal.
+END:VEVENT
+END:VCALENDAR
