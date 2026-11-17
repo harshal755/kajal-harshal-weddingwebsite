@@ -1,21 +1,19 @@
 # Kajal & Harshal Wedding Invitation
 
-A Next.js wedding invitation site. All event information and image captions are editable in `wedding-details.json`.
+Next.js wedding invitation website for Kajal & Harshal, 5 December 2026.
+
+## Theme and opening invitation
+- Site palette: wine, ivory, champagne gold, with muted rose accents.
+- The opening envelope keeps the existing layered envelope construction, monogram seal, floating motion, and flap-opening animation. Only the colors have been changed to a wine envelope with ivory letter and an ivory backdrop.
+- Navigation and small-label typography are enlarged for readability, including on mobile.
+- Google Maps preview is larger and responsive, with a separate link to open directions.
+- The Kesariya flute cover is embedded through YouTube and credited to its uploader. Playback requires the visitor to press Play.
+- All 12 photo assets are included under `public/photos/`.
 
 ## Run locally
-1. Install Node.js 20 or later.
-2. Open this folder in a terminal.
-3. Run `npm install` and then `npm run dev`.
-4. Open http://localhost:3000.
-
-## Photos
-All 12 couple photographs are stored in `public/photos/` and listed in `wedding-details.json`. Replace a file using the same filename to update a photo, or change the `src` in the JSON.
-
-## Edit wedding details
-Edit `wedding-details.json` to change names, date, venue, schedule times, photo captions, map links and the featured music embed. The current featured track is a YouTube-hosted Kesariya flute cover; update the `music.embedUrl`, `music.title`, and `music.artist` fields to change it. The embedded player requires the guest to press Play; browsers generally block sound autoplay.
+1. Install dependencies: `npm install`
+2. Start development server: `npm run dev`
+3. Create production build: `npm run build`
 
 ## Deploy
-The project root is this folder (the folder containing `package.json` and `app/`). Use `/` as the Vercel Root Directory.
-
-## Venue map
-The responsive Google Maps preview uses `mapsEmbedUrl`; the separate `mapsUrl` opens full directions in Google Maps.
+Push the contents of this folder to the connected GitHub repository, then redeploy the Vercel project with this folder as the project root.
