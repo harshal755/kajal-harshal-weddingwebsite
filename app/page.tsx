@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import wedding from '../wedding-details.json';
 
 type TimeLeft = { days: number; hours: number; minutes: number; seconds: number };
@@ -96,6 +96,8 @@ export default function Home() {
   const [isOpened, setIsOpened] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState<number | null>(null);
   const [shareMessage, setShareMessage] = useState('');
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = isOpened ? '' : 'hidden';
@@ -153,6 +155,22 @@ export default function Home() {
       document.body.style.overflow = '';
     };
   }, [selectedPhoto]);
+
+  const toggleMusic = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (audio.paused) {
+      try {
+        await audio.play();
+        setIsPlaying(true);
+      } catch {
+        setIsPlaying(false);
+      }
+    } else {
+      audio.pause();
+      setIsPlaying(false);
+    }
+  };
 
   const shareInvitation = async () => {
     const shareData = {
@@ -335,17 +353,17 @@ export default function Home() {
           <p className="section-kicker">A little music, a lot of feeling</p>
           <h2>Our song, in a<br /><em>softer note.</em></h2>
           <p className="body-copy">Enjoy this soulful flute rendition of “Kesariya” as you explore our invitation.</p>
-          <div className="music-video-card">
-            <iframe
-              src={wedding.music.embedUrl}
-              title={wedding.music.title}
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
+          <div className="music-player-card">
+            <audio ref={audioRef} src={wedding.music.src} preload="metadata"
+              onEnded={() => setIsPlaying(false)} onPause={() => setIsPlaying(false)}
+              onPlay={() => setIsPlaying(true)} />
+            <button className="music-play-button" onClick={toggleMusic}
+              aria-label={isPlaying ? 'Pause Kesariya flute instrumental' : 'Play Kesariya flute instrumental'}>
+              <span aria-hidden="true">{isPlaying ? 'Ⅱ' : '▶'}</span>
+              <span>{isPlaying ? 'PAUSE OUR SONG' : 'PLAY OUR SONG'}</span>
+            </button>
+            <p className="music-credit">A little flute melody for our celebration</p>
           </div>
-          <p className="music-credit">Flute cover by {wedding.music.artist} · Hosted by YouTube</p>
         </div>
       </section>
 
