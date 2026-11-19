@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
-import wedding from '../wedding-details.json';
+import wedding from './wedding-details.json';
 
 type TimeLeft = { days: number; hours: number; minutes: number; seconds: number };
 
