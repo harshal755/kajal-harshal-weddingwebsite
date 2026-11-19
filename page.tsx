@@ -335,16 +335,15 @@ export default function Home() {
           <p className="section-kicker">A little music, a lot of feeling</p>
           <h2>Our song, in a<br /><em>softer note.</em></h2>
           <p className="body-copy">Enjoy this soulful flute rendition of “Kesariya” as you explore our invitation.</p>
-          <div className="music-video-card">
-            <iframe
-              src={wedding.music.embedUrl}
-              title={wedding.music.title}
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-          </div>
+         <div className="music-video-card">
+  <audio
+    controls
+    preload="metadata"
+    src={wedding.music.src}
+  >
+    Your browser does not support audio playback.
+  </audio>
+</div>
           <p className="music-credit">Flute cover by {wedding.music.artist} · Hosted by YouTube</p>
         </div>
       </section>
